@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="141" id="KGk-i7-Jjw" customClass="AddressManageCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="130"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="129"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Frank" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BXS-wu-cyE">
+                        <rect key="frame" x="15" y="15" width="38.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.27450980390000002" green="0.27450980390000002" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13222222222" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nb6-3P-1dV">
+                        <rect key="frame" x="78.5" y="15" width="95.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.27450980390000002" green="0.27450980390000002" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="四川省 成都市 武侯区" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rzD-zK-aYO">
+                        <rect key="frame" x="15" y="43" width="127" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.27450980390000002" green="0.27450980390000002" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="天府街道蜀都中心2期一单元11楼" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dCC-wA-rDi">
+                        <rect key="frame" x="15" y="64" width="192.5" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1L0-7q-poz">
+                        <rect key="frame" x="15" y="90" width="290" height="0.5"/>
+                        <color key="backgroundColor" red="0.85098039219999999" green="0.85098039219999999" blue="0.85098039219999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="I12-7e-EAk"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="htd-Q4-UJc">
+                        <rect key="frame" x="15" y="95.5" width="85" height="29"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="85" id="3AR-Rx-vZH"/>
+                            <constraint firstAttribute="height" constant="29" id="mzs-Te-VF2"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="-5" maxY="0.0"/>
+                        <state key="normal" title="默认地址" image="home_select_no">
+                            <color key="titleColor" red="0.27450980390000002" green="0.27450980390000002" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <state key="selected" image="check"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FFU-K1-6cd">
+                        <rect key="frame" x="258" y="95" width="55" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="55" id="H1x-fE-ukf"/>
+                            <constraint firstAttribute="height" constant="30" id="aWt-TP-hJg"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <inset key="imageEdgeInsets" minX="-7" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" title="删除" image="edit_delete">
+                            <color key="titleColor" red="0.27450980390000002" green="0.27450980390000002" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bqD-mr-hgY">
+                        <rect key="frame" x="188" y="95" width="55" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="55" id="82e-qk-8Nq"/>
+                            <constraint firstAttribute="height" constant="30" id="zIr-dz-Shs"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <inset key="imageEdgeInsets" minX="-7" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" title="编辑" image="edit_address">
+                            <color key="titleColor" red="0.27450980390000002" green="0.27450980390000002" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="rzD-zK-aYO" firstAttribute="leading" secondItem="BXS-wu-cyE" secondAttribute="leading" id="1BV-Hd-38t"/>
+                    <constraint firstItem="bqD-mr-hgY" firstAttribute="centerY" secondItem="htd-Q4-UJc" secondAttribute="centerY" id="5dP-mb-fmT"/>
+                    <constraint firstItem="1L0-7q-poz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="7" id="6I1-ak-bRt"/>
+                    <constraint firstItem="FFU-K1-6cd" firstAttribute="leading" secondItem="bqD-mr-hgY" secondAttribute="trailing" constant="15" id="7vj-7w-pXZ"/>
+                    <constraint firstItem="BXS-wu-cyE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="7" id="9dr-k5-SdS"/>
+                    <constraint firstItem="Nb6-3P-1dV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="7" id="Cqn-li-9bx"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="1L0-7q-poz" secondAttribute="trailing" constant="7" id="EtE-Ru-O8j"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="htd-Q4-UJc" secondAttribute="bottom" constant="-3" id="HcA-Ow-ovX"/>
+                    <constraint firstItem="FFU-K1-6cd" firstAttribute="centerY" secondItem="htd-Q4-UJc" secondAttribute="centerY" id="P2D-eV-tWo"/>
+                    <constraint firstItem="dCC-wA-rDi" firstAttribute="leading" secondItem="rzD-zK-aYO" secondAttribute="leading" id="VIk-t2-vFX"/>
+                    <constraint firstItem="1L0-7q-poz" firstAttribute="top" secondItem="dCC-wA-rDi" secondAttribute="bottom" constant="10" id="Xia-n6-fMq"/>
+                    <constraint firstItem="Nb6-3P-1dV" firstAttribute="leading" secondItem="BXS-wu-cyE" secondAttribute="trailing" constant="25" id="nBG-gk-JTs"/>
+                    <constraint firstAttribute="trailing" secondItem="FFU-K1-6cd" secondAttribute="trailing" constant="7" id="oDi-4j-L4W"/>
+                    <constraint firstItem="dCC-wA-rDi" firstAttribute="top" secondItem="rzD-zK-aYO" secondAttribute="bottom" constant="5" id="p7l-kn-zQs"/>
+                    <constraint firstItem="rzD-zK-aYO" firstAttribute="top" secondItem="BXS-wu-cyE" secondAttribute="bottom" constant="10" id="pM2-Kf-YpD"/>
+                    <constraint firstItem="htd-Q4-UJc" firstAttribute="top" secondItem="1L0-7q-poz" secondAttribute="bottom" constant="5" id="sU4-xN-yox"/>
+                    <constraint firstItem="htd-Q4-UJc" firstAttribute="leading" secondItem="BXS-wu-cyE" secondAttribute="leading" id="wIL-JF-z9w"/>
+                    <constraint firstItem="BXS-wu-cyE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="7" id="xAy-uI-Cn7"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="addressLab" destination="rzD-zK-aYO" id="ASJ-hz-hMV"/>
+                <outlet property="defaulBtn" destination="htd-Q4-UJc" id="jl2-cZ-KqA"/>
+                <outlet property="deleteBtn" destination="FFU-K1-6cd" id="gYm-A9-1qJ"/>
+                <outlet property="detailAddrLab" destination="dCC-wA-rDi" id="DA6-bU-VMi"/>
+                <outlet property="editBtn" destination="bqD-mr-hgY" id="zcT-AK-Vr5"/>
+                <outlet property="nameLab" destination="BXS-wu-cyE" id="oCt-b9-lLi"/>
+                <outlet property="phoneLab" destination="Nb6-3P-1dV" id="Wgw-kF-stI"/>
+            </connections>
+            <point key="canvasLocation" x="39" y="-17.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="check" width="18" height="18"/>
+        <image name="edit_address" width="18" height="18"/>
+        <image name="edit_delete" width="18" height="18"/>
+        <image name="home_select_no" width="18" height="18"/>
+    </resources>
+</document>

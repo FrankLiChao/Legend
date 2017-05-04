@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LogisticsViewController">
+            <connections>
+                <outlet property="logisticsTableView" destination="PG5-b7-7HL" id="Ef8-Ij-oZA"/>
+                <outlet property="noLogisticsView" destination="Rbq-2m-HsH" id="Pxf-3j-w1z"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PG5-b7-7HL">
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="kd9-vG-lVP"/>
+                        <outlet property="delegate" destination="-1" id="Z4b-Kw-zn1"/>
+                    </connections>
+                </tableView>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rbq-2m-HsH">
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="monkey_fail" translatesAutoresizingMaskIntoConstraints="NO" id="VXz-20-CO2"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="当前无物流信息，请联系商家确认哦~" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kOp-0R-2uq">
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.27450980390000002" green="0.27450980390000002" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="kOp-0R-2uq" firstAttribute="top" secondItem="VXz-20-CO2" secondAttribute="bottom" constant="30" id="4F8-ax-oZ4"/>
+                        <constraint firstItem="VXz-20-CO2" firstAttribute="centerY" secondItem="Rbq-2m-HsH" secondAttribute="centerY" constant="-130" id="4co-JK-e7J"/>
+                        <constraint firstItem="VXz-20-CO2" firstAttribute="centerX" secondItem="Rbq-2m-HsH" secondAttribute="centerX" id="Xz3-tA-iRd"/>
+                        <constraint firstItem="kOp-0R-2uq" firstAttribute="centerX" secondItem="VXz-20-CO2" secondAttribute="centerX" id="ZP5-Ry-7Dk"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="PG5-b7-7HL" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="POb-Rd-Gwh"/>
+                <constraint firstAttribute="trailing" secondItem="Rbq-2m-HsH" secondAttribute="trailing" id="PwH-BE-ZHL"/>
+                <constraint firstAttribute="trailing" secondItem="PG5-b7-7HL" secondAttribute="trailing" id="Qvi-li-YNJ"/>
+                <constraint firstItem="Rbq-2m-HsH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="WVU-9j-Tag"/>
+                <constraint firstItem="PG5-b7-7HL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="fB7-03-McL"/>
+                <constraint firstAttribute="bottom" secondItem="PG5-b7-7HL" secondAttribute="bottom" id="l8y-T1-smL"/>
+                <constraint firstItem="Rbq-2m-HsH" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="yXz-vA-Esl"/>
+                <constraint firstAttribute="bottom" secondItem="Rbq-2m-HsH" secondAttribute="bottom" id="z84-6o-XEo"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="54.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="monkey_fail" width="85" height="108"/>
+    </resources>
+</document>

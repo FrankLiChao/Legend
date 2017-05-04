@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PayWordBingViewController">
+            <connections>
+                <outlet property="checkBtn" destination="Krk-r9-cg8" id="lMZ-di-l7e"/>
+                <outlet property="checkHavePayWordOrNotView" destination="hWF-IX-fGZ" id="Dg5-jU-Bom"/>
+                <outlet property="payWordTF" destination="FJ6-ff-aNg" id="qZe-LI-xtk"/>
+                <outlet property="setPayWordBtn" destination="kdO-NX-GKZ" id="cUf-ND-suu"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="22c-E9-lH4">
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xlh-xU-1bJ">
+                            <attributedString key="attributedText">
+                                <fragment content="选择绑定方式">
+                                    <attributes>
+                                        <color key="NSBackgroundColor" red="1" green="0.16384560548155314" blue="0.22945379452947567" alpha="0.0" colorSpace="calibratedRGB"/>
+                                        <color key="NSColor" red="0.60784313725490191" green="0.60784313725490191" blue="0.60784313725490191" alpha="1" colorSpace="calibratedRGB"/>
+                                        <font key="NSFont" size="14" name=".PingFangSC-Regular"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment content=" ">
+                                    <attributes>
+                                        <color key="NSBackgroundColor" red="1" green="0.16384560548155314" blue="0.22945379452947567" alpha="0.0" colorSpace="calibratedRGB"/>
+                                        <color key="NSColor" red="0.60784313725490191" green="0.60784313725490191" blue="0.60784313725490191" alpha="1" colorSpace="calibratedRGB"/>
+                                        <font key="NSFont" size="14" name=".AppleSystemUIFont"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment content=" &gt; ">
+                                    <attributes>
+                                        <color key="NSColor" red="0.60784313725490191" green="0.60784313725490191" blue="0.60784313725490191" alpha="1" colorSpace="calibratedRGB"/>
+                                        <font key="NSFont" metaFont="menu" size="14"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment content="安全验证">
+                                    <attributes>
+                                        <color key="NSColor" red="0.85098039215686272" green="0.13333333333333333" blue="0.18431372549019609" alpha="1" colorSpace="calibratedRGB"/>
+                                        <font key="NSFont" size="14" name=".PingFangSC-Regular"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment content=" &gt; ">
+                                    <attributes>
+                                        <color key="NSColor" red="0.60784313725490191" green="0.60784313725490191" blue="0.60784313725490191" alpha="1" colorSpace="calibratedRGB"/>
+                                        <font key="NSFont" metaFont="menu" size="14"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment content="换绑手机">
+                                    <attributes>
+                                        <color key="NSColor" red="0.60784313725490191" green="0.60784313725490191" blue="0.60784313725490191" alpha="1" colorSpace="calibratedRGB"/>
+                                        <font key="NSFont" size="14" name=".PingFangSC-Regular"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment content=" ">
+                                    <attributes>
+                                        <color key="NSColor" red="0.60784313725490191" green="0.60784313725490191" blue="0.60784313725490191" alpha="1" colorSpace="calibratedRGB"/>
+                                        <font key="NSFont" metaFont="menu" size="14"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="xlh-xU-1bJ" firstAttribute="leading" secondItem="22c-E9-lH4" secondAttribute="leading" constant="15" id="Z1d-nZ-key"/>
+                        <constraint firstAttribute="width" secondItem="22c-E9-lH4" secondAttribute="height" multiplier="75:8" id="pAj-ZX-XNP"/>
+                        <constraint firstItem="xlh-xU-1bJ" firstAttribute="centerY" secondItem="22c-E9-lH4" secondAttribute="centerY" id="sLf-dq-zRd"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rYq-Lo-z07">
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="填写支付密码" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="FJ6-ff-aNg">
+                            <color key="tintColor" red="0.27450980390000002" green="0.27450980390000002" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="nxL-p2-jeo"/>
+                            </constraints>
+                            <color key="textColor" red="0.27450980390000002" green="0.27450980390000002" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="FJ6-ff-aNg" firstAttribute="centerY" secondItem="rYq-Lo-z07" secondAttribute="centerY" id="7cg-Pn-q4p"/>
+                        <constraint firstItem="FJ6-ff-aNg" firstAttribute="leading" secondItem="rYq-Lo-z07" secondAttribute="leading" constant="15" id="NjM-Yk-E4A"/>
+                        <constraint firstAttribute="trailing" secondItem="FJ6-ff-aNg" secondAttribute="trailing" constant="15" id="Y9E-Yi-Pzf"/>
+                        <constraint firstAttribute="height" constant="40" id="bBd-Ug-Och"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Krk-r9-cg8">
+                    <color key="backgroundColor" red="0.85098039219999999" green="0.1333333333" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Krk-r9-cg8" secondAttribute="height" multiplier="59:8" id="oxA-0q-ILA"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="验证">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="checkPayWordAct:" destination="-1" eventType="touchUpInside" id="bGv-sw-O5W"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hWF-IX-fGZ">
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="payWordCheck" translatesAutoresizingMaskIntoConstraints="NO" id="Qf2-fZ-nqg">
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="Qf2-fZ-nqg" secondAttribute="height" multiplier="720:338" id="b3U-Mk-gnU"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您尚未设置支付密码，请先去设置" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iTj-UF-wrg">
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.85098039219999999" green="0.1333333333" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kdO-NX-GKZ">
+                            <color key="backgroundColor" red="0.85098039219999999" green="0.1333333333" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="kdO-NX-GKZ" secondAttribute="height" multiplier="59:8" id="fqq-x3-6Dv"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <state key="normal" title="支付密码设置">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="setPayWordAct:" destination="-1" eventType="touchUpInside" id="R3k-M0-8ow"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Qf2-fZ-nqg" firstAttribute="leading" secondItem="hWF-IX-fGZ" secondAttribute="leading" id="0lC-JN-vZX"/>
+                        <constraint firstItem="iTj-UF-wrg" firstAttribute="top" secondItem="Qf2-fZ-nqg" secondAttribute="bottom" constant="15" id="0uP-hH-vd1"/>
+                        <constraint firstAttribute="trailing" secondItem="Qf2-fZ-nqg" secondAttribute="trailing" id="9KG-Ms-arS"/>
+                        <constraint firstItem="kdO-NX-GKZ" firstAttribute="leading" secondItem="hWF-IX-fGZ" secondAttribute="leading" constant="40" id="MW6-4d-akH"/>
+                        <constraint firstAttribute="height" constant="300" id="OXQ-eM-YnV"/>
+                        <constraint firstAttribute="trailing" secondItem="kdO-NX-GKZ" secondAttribute="trailing" constant="40" id="Qeq-oM-wfd"/>
+                        <constraint firstItem="iTj-UF-wrg" firstAttribute="centerX" secondItem="Qf2-fZ-nqg" secondAttribute="centerX" id="Shy-j9-6lz"/>
+                        <constraint firstItem="Qf2-fZ-nqg" firstAttribute="top" secondItem="hWF-IX-fGZ" secondAttribute="top" id="tQ7-ht-OPb"/>
+                        <constraint firstItem="kdO-NX-GKZ" firstAttribute="top" secondItem="iTj-UF-wrg" secondAttribute="bottom" constant="15" id="tQp-Xd-Ajh"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Krk-r9-cg8" firstAttribute="top" secondItem="rYq-Lo-z07" secondAttribute="bottom" constant="40" id="1t4-QJ-0be"/>
+                <constraint firstAttribute="trailing" secondItem="Krk-r9-cg8" secondAttribute="trailing" constant="40" id="2mz-vU-6no"/>
+                <constraint firstItem="22c-E9-lH4" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="5g2-AI-KHm"/>
+                <constraint firstItem="Krk-r9-cg8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="ATP-nZ-t7R"/>
+                <constraint firstItem="rYq-Lo-z07" firstAttribute="top" secondItem="22c-E9-lH4" secondAttribute="bottom" id="Eyr-rw-tON"/>
+                <constraint firstItem="hWF-IX-fGZ" firstAttribute="top" secondItem="22c-E9-lH4" secondAttribute="bottom" id="Kjk-SG-Nen"/>
+                <constraint firstItem="22c-E9-lH4" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="SKI-6a-j17"/>
+                <constraint firstAttribute="trailing" secondItem="22c-E9-lH4" secondAttribute="trailing" id="TaS-Yr-qEs"/>
+                <constraint firstItem="hWF-IX-fGZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="YCC-fK-gdC"/>
+                <constraint firstAttribute="trailing" secondItem="rYq-Lo-z07" secondAttribute="trailing" id="lWc-FN-xOk"/>
+                <constraint firstItem="rYq-Lo-z07" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="uow-0V-Aa1"/>
+                <constraint firstAttribute="trailing" secondItem="hWF-IX-fGZ" secondAttribute="trailing" id="xNP-Ot-Yqn"/>
+            </constraints>
+            <point key="canvasLocation" x="34" y="-63"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="payWordCheck" width="720" height="338"/>
+    </resources>
+</document>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddressManagerViewController">
+            <connections>
+                <outlet property="myTableView" destination="24u-bT-oz1" id="EAB-rc-6m0"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mine_address_null" translatesAutoresizingMaskIntoConstraints="NO" id="KbG-mR-Ji9">
+                    <rect key="frame" x="135" y="243" width="105" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="105" id="Mg4-7W-XU3"/>
+                        <constraint firstAttribute="height" constant="80" id="WDi-q2-D3n"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="啊哦！您还没有设置收货地址哦！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gTC-6d-66L">
+                    <rect key="frame" x="15" y="353" width="345" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.27450980390000002" green="0.27450980390000002" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="24u-bT-oz1">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="KbG-mR-Ji9" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-50" id="8oy-Go-ELR"/>
+                <constraint firstItem="24u-bT-oz1" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="8rB-HJ-5Tl"/>
+                <constraint firstAttribute="trailing" secondItem="gTC-6d-66L" secondAttribute="trailing" constant="15" id="BkN-t6-Oms"/>
+                <constraint firstItem="24u-bT-oz1" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="IgB-Pe-7oJ"/>
+                <constraint firstAttribute="bottom" secondItem="24u-bT-oz1" secondAttribute="bottom" id="OQ6-VA-28t"/>
+                <constraint firstAttribute="trailing" secondItem="24u-bT-oz1" secondAttribute="trailing" id="bTy-34-Ae3"/>
+                <constraint firstItem="gTC-6d-66L" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="mjS-9P-Q6K"/>
+                <constraint firstItem="KbG-mR-Ji9" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="oCX-dQ-vl8"/>
+                <constraint firstItem="gTC-6d-66L" firstAttribute="top" secondItem="KbG-mR-Ji9" secondAttribute="bottom" constant="30" id="qsS-pz-EMe"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="mine_address_null" width="105" height="80"/>
+    </resources>
+</document>

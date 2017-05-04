@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CommodityListViewController">
+            <connections>
+                <outlet property="commodityCollectionView" destination="yf8-kc-nma" id="Wbw-na-lsb"/>
+                <outlet property="commodityNoGoodsView" destination="xUb-sg-1Yj" id="tor-U4-eYK"/>
+                <outlet property="commodityTableView" destination="TeZ-mg-EZV" id="ar5-8X-aIj"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" rowHeight="105" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TeZ-mg-EZV">
+                    <rect key="frame" x="0.0" y="40" width="375" height="627"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="e30-RA-QFn"/>
+                        <outlet property="delegate" destination="-1" id="sAi-KK-145"/>
+                    </connections>
+                </tableView>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="yf8-kc-nma">
+                    <rect key="frame" x="0.0" y="40" width="375" height="627"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="5" minimumInteritemSpacing="5" id="t8l-gm-YAj">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="5" minY="5" maxX="5" maxY="5"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="a6E-U1-QCr"/>
+                        <outlet property="delegate" destination="-1" id="YL2-eG-GR7"/>
+                    </connections>
+                </collectionView>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xUb-sg-1Yj">
+                    <rect key="frame" x="0.0" y="40" width="375" height="627"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noOrder" translatesAutoresizingMaskIntoConstraints="NO" id="nh8-yW-MsE">
+                            <rect key="frame" x="132.5" y="228.5" width="110" height="110"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="没有搜索到相关商品" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XwW-09-3CA">
+                            <rect key="frame" x="118.5" y="348.5" width="138" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.27450980390000002" green="0.27450980390000002" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="XwW-09-3CA" firstAttribute="centerX" secondItem="nh8-yW-MsE" secondAttribute="centerX" id="20g-pS-FJj"/>
+                        <constraint firstItem="XwW-09-3CA" firstAttribute="top" secondItem="nh8-yW-MsE" secondAttribute="bottom" constant="10" id="f6M-rJ-qVP"/>
+                        <constraint firstItem="nh8-yW-MsE" firstAttribute="centerY" secondItem="xUb-sg-1Yj" secondAttribute="centerY" constant="-30" id="fjb-i5-YlE"/>
+                        <constraint firstItem="nh8-yW-MsE" firstAttribute="centerX" secondItem="xUb-sg-1Yj" secondAttribute="centerX" id="pAP-Xq-PEc"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="xUb-sg-1Yj" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="40" id="H1K-Zl-2Ee"/>
+                <constraint firstAttribute="bottom" secondItem="xUb-sg-1Yj" secondAttribute="bottom" id="Kms-ns-Ydk"/>
+                <constraint firstAttribute="bottom" secondItem="TeZ-mg-EZV" secondAttribute="bottom" id="Pxd-EA-lSf"/>
+                <constraint firstAttribute="trailing" secondItem="TeZ-mg-EZV" secondAttribute="trailing" id="SLC-bw-asZ"/>
+                <constraint firstItem="yf8-kc-nma" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ZZD-Aw-L7Z"/>
+                <constraint firstAttribute="bottom" secondItem="yf8-kc-nma" secondAttribute="bottom" id="cAU-fs-pEf"/>
+                <constraint firstAttribute="trailing" secondItem="xUb-sg-1Yj" secondAttribute="trailing" id="fLS-Pz-dQ5"/>
+                <constraint firstItem="yf8-kc-nma" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="40" id="fuy-Dv-Siu"/>
+                <constraint firstAttribute="trailing" secondItem="yf8-kc-nma" secondAttribute="trailing" id="klp-f3-ksV"/>
+                <constraint firstItem="TeZ-mg-EZV" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="40" id="lJA-8G-dyc"/>
+                <constraint firstItem="xUb-sg-1Yj" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="z2A-3n-u31"/>
+                <constraint firstItem="TeZ-mg-EZV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="zYi-sr-OVO"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="noOrder" width="110" height="110"/>
+    </resources>
+</document>

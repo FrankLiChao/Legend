@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InviteOfRegisterController">
+            <connections>
+                <outlet property="inviteCodeTF" destination="v9e-ng-rWd" id="Buo-pn-SL6"/>
+                <outlet property="nextStepBtn" destination="aze-eI-hIS" id="zdf-AO-sav"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginBackgroundImage" translatesAutoresizingMaskIntoConstraints="NO" id="XSK-Rf-ORF">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="swf-cv-zz8">
+                    <rect key="frame" x="0.0" y="190" width="375" height="45"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入邀请码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v9e-ng-rWd" customClass="BaseTextField">
+                            <rect key="frame" x="74" y="7.5" width="226" height="30"/>
+                            <color key="tintColor" red="0.27450980390000002" green="0.27450980390000002" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="Fq9-Hs-08T"/>
+                            </constraints>
+                            <color key="textColor" red="0.27450980390000002" green="0.27450980390000002" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done"/>
+                        </textField>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AR1-H1-b8v">
+                            <rect key="frame" x="40" y="44" width="295" height="1"/>
+                            <color key="backgroundColor" red="0.85098039219999999" green="0.85098039219999999" blue="0.85098039219999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="aty-bA-9HC"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.85098039219999999" green="0.85098039219999999" blue="0.85098039219999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="account" translatesAutoresizingMaskIntoConstraints="NO" id="wFW-vb-ikk">
+                            <rect key="frame" x="40" y="12.5" width="19" height="20"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nUS-mP-R5N">
+                            <rect key="frame" x="315" y="11.5" width="20" height="22"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="20" id="Ltg-3t-c8i"/>
+                                <constraint firstAttribute="height" constant="22" id="bKb-Fe-nNM"/>
+                            </constraints>
+                            <state key="normal" image="Delete"/>
+                            <connections>
+                                <action selector="deleteAct:" destination="-1" eventType="touchUpInside" id="zLj-Vi-Fun"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="v9e-ng-rWd" firstAttribute="centerY" secondItem="swf-cv-zz8" secondAttribute="centerY" id="2x0-un-KXS"/>
+                        <constraint firstAttribute="trailing" secondItem="nUS-mP-R5N" secondAttribute="trailing" constant="40" id="8jG-DE-neX"/>
+                        <constraint firstItem="wFW-vb-ikk" firstAttribute="centerY" secondItem="swf-cv-zz8" secondAttribute="centerY" id="DBm-bi-6Wq"/>
+                        <constraint firstItem="wFW-vb-ikk" firstAttribute="leading" secondItem="swf-cv-zz8" secondAttribute="leading" constant="40" id="EMu-0M-TYy"/>
+                        <constraint firstAttribute="bottom" secondItem="AR1-H1-b8v" secondAttribute="bottom" id="NXX-ui-Oa6"/>
+                        <constraint firstAttribute="height" constant="45" id="bC9-Kd-tOZ"/>
+                        <constraint firstItem="v9e-ng-rWd" firstAttribute="leading" secondItem="wFW-vb-ikk" secondAttribute="trailing" constant="15" id="cSK-BQ-Kus"/>
+                        <constraint firstItem="AR1-H1-b8v" firstAttribute="leading" secondItem="swf-cv-zz8" secondAttribute="leading" constant="40" id="due-AK-8XB"/>
+                        <constraint firstAttribute="trailing" secondItem="AR1-H1-b8v" secondAttribute="trailing" constant="40" id="fDt-gf-42I"/>
+                        <constraint firstItem="nUS-mP-R5N" firstAttribute="centerY" secondItem="wFW-vb-ikk" secondAttribute="centerY" id="hED-5U-J9Z"/>
+                        <constraint firstItem="nUS-mP-R5N" firstAttribute="leading" secondItem="v9e-ng-rWd" secondAttribute="trailing" constant="15" id="rbc-Yl-wOc"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aze-eI-hIS">
+                    <rect key="frame" x="40" y="265" width="295" height="40"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="aze-eI-hIS" secondAttribute="height" multiplier="59:8" id="Kjj-Tb-L5h"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="下一步" backgroundImage="loginButtonBackground">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="nextStepAct:" destination="-1" eventType="touchUpInside" id="Rv3-LV-VBh"/>
+                    </connections>
+                </button>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Bi-dC-sWM">
+                    <rect key="frame" x="20" y="30" width="20" height="18"/>
+                    <state key="normal" backgroundImage="return_image"/>
+                    <connections>
+                        <action selector="getBackAct:" destination="-1" eventType="touchUpInside" id="sYG-sT-s0C"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LegendImg" translatesAutoresizingMaskIntoConstraints="NO" id="E1m-lE-omb">
+                    <rect key="frame" x="149.5" y="85" width="76" height="55"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="XSK-Rf-ORF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="25T-m3-BE6"/>
+                <constraint firstItem="aze-eI-hIS" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="AIB-7Z-Zx1"/>
+                <constraint firstAttribute="trailing" secondItem="XSK-Rf-ORF" secondAttribute="trailing" id="Bjf-wu-2LE"/>
+                <constraint firstItem="E1m-lE-omb" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="85" id="FHT-JW-eVP"/>
+                <constraint firstItem="2Bi-dC-sWM" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="30" id="IYN-Uj-zjj"/>
+                <constraint firstAttribute="trailing" secondItem="swf-cv-zz8" secondAttribute="trailing" id="LEb-3O-YLa"/>
+                <constraint firstItem="2Bi-dC-sWM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="Nrm-yt-Plw"/>
+                <constraint firstItem="aze-eI-hIS" firstAttribute="top" secondItem="swf-cv-zz8" secondAttribute="bottom" constant="30" id="QZw-AS-lKv"/>
+                <constraint firstItem="swf-cv-zz8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="TZv-HM-YB1"/>
+                <constraint firstItem="XSK-Rf-ORF" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="aQn-0J-ZC2"/>
+                <constraint firstAttribute="bottom" secondItem="XSK-Rf-ORF" secondAttribute="bottom" id="auI-0B-c2V"/>
+                <constraint firstItem="swf-cv-zz8" firstAttribute="top" secondItem="E1m-lE-omb" secondAttribute="bottom" constant="50" id="n1F-Xr-233"/>
+                <constraint firstAttribute="trailing" secondItem="aze-eI-hIS" secondAttribute="trailing" constant="40" id="sc3-8C-xPC"/>
+                <constraint firstItem="E1m-lE-omb" firstAttribute="centerX" secondItem="XSK-Rf-ORF" secondAttribute="centerX" id="tmQ-BV-1RV"/>
+            </constraints>
+            <point key="canvasLocation" x="-107.5" y="-26.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Delete" width="17" height="17"/>
+        <image name="LegendImg" width="76" height="55"/>
+        <image name="account" width="19" height="20"/>
+        <image name="loginBackgroundImage" width="750" height="1334"/>
+        <image name="loginButtonBackground" width="258" height="32"/>
+        <image name="return_image" width="20" height="17"/>
+    </resources>
+</document>

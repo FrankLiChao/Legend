@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ShoppingCartViewController">
+            <connections>
+                <outlet property="emptyView" destination="fFA-VC-dHA" id="XHl-uh-L0L"/>
+                <outlet property="goToHomeBtn" destination="g5i-pc-GIc" id="EzV-fu-5Lj"/>
+                <outlet property="view" destination="iN0-l3-epB" id="eVg-EZ-eft"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fFA-VC-dHA">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty_shopping_cart" translatesAutoresizingMaskIntoConstraints="NO" id="gbT-hI-rQi">
+                            <rect key="frame" x="122" y="127" width="130" height="130"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="130" id="0Uk-sl-6xB"/>
+                                <constraint firstAttribute="height" constant="130" id="1FH-UE-EmN"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="偶遇总有无限惊喜，一起" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dHc-gC-I9y">
+                            <rect key="frame" x="63.5" y="287" width="168.5" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.27450980392156865" green="0.27450980392156865" blue="0.27450980392156865" alpha="0.5" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g5i-pc-GIc">
+                            <rect key="frame" x="242" y="281" width="70" height="30"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="70" id="1LA-fV-Mox"/>
+                                <constraint firstAttribute="height" constant="30" id="Z26-eH-bN0"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="去逛逛">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="goToHome:" destination="-1" eventType="touchUpInside" id="gQC-JC-XQW"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="g5i-pc-GIc" firstAttribute="leading" secondItem="dHc-gC-I9y" secondAttribute="trailing" constant="10" id="4e9-qI-vNx"/>
+                        <constraint firstItem="gbT-hI-rQi" firstAttribute="centerX" secondItem="fFA-VC-dHA" secondAttribute="centerX" id="7WD-C6-vcA"/>
+                        <constraint firstItem="gbT-hI-rQi" firstAttribute="top" secondItem="fFA-VC-dHA" secondAttribute="top" constant="127" id="Du2-Bb-w31"/>
+                        <constraint firstItem="dHc-gC-I9y" firstAttribute="centerX" secondItem="fFA-VC-dHA" secondAttribute="centerX" constant="-40" id="lXT-PW-tbM"/>
+                        <constraint firstItem="g5i-pc-GIc" firstAttribute="centerY" secondItem="dHc-gC-I9y" secondAttribute="centerY" id="oyI-1H-Dc7"/>
+                        <constraint firstItem="dHc-gC-I9y" firstAttribute="top" secondItem="gbT-hI-rQi" secondAttribute="bottom" constant="30" id="zl7-re-Wi1"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fFA-VC-dHA" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="KPb-IF-mIL"/>
+                <constraint firstAttribute="bottom" secondItem="fFA-VC-dHA" secondAttribute="bottom" id="aGK-1Z-kra"/>
+                <constraint firstItem="fFA-VC-dHA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="j73-1u-88z"/>
+                <constraint firstAttribute="trailing" secondItem="fFA-VC-dHA" secondAttribute="trailing" id="xyt-N7-vHQ"/>
+            </constraints>
+            <point key="canvasLocation" x="26.5" y="51.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="empty_shopping_cart" width="130" height="130"/>
+    </resources>
+</document>

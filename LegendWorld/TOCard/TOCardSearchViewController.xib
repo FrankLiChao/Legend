@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TOCardSearchViewController">
+            <connections>
+                <outlet property="tableView" destination="fUG-oG-dXd" id="jBP-Ml-Ckg"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tok_defaultsearchimage" translatesAutoresizingMaskIntoConstraints="NO" id="oQa-sC-ZwN">
+                    <rect key="frame" x="57" y="82" width="260" height="122"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="122" id="ShP-gG-9Q6"/>
+                        <constraint firstAttribute="width" constant="260" id="UzO-4e-KxI"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="抱歉，未找到相应成员" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mjl-Y0-4LU">
+                    <rect key="frame" x="116" y="237" width="143" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.27450980392156865" green="0.27450980392156865" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请检查成员名或手机号是否正确" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LBM-C5-gQ3">
+                    <rect key="frame" x="88" y="262" width="200" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.27450980392156865" green="0.27450980392156865" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="fUG-oG-dXd">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="ouX-Rc-kpJ"/>
+                        <outlet property="delegate" destination="-1" id="eW9-1d-rDm"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="oQa-sC-ZwN" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="0Bl-tp-AF5"/>
+                <constraint firstItem="fUG-oG-dXd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Do9-lZ-skA"/>
+                <constraint firstItem="mjl-Y0-4LU" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Na6-Te-BaO"/>
+                <constraint firstItem="oQa-sC-ZwN" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="82" id="bVy-XC-hAU"/>
+                <constraint firstItem="LBM-C5-gQ3" firstAttribute="top" secondItem="mjl-Y0-4LU" secondAttribute="bottom" constant="8" id="d0J-m9-B34"/>
+                <constraint firstItem="fUG-oG-dXd" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="hFl-Oh-VQY"/>
+                <constraint firstItem="LBM-C5-gQ3" firstAttribute="centerX" secondItem="mjl-Y0-4LU" secondAttribute="centerX" id="pFy-ZQ-v8y"/>
+                <constraint firstItem="mjl-Y0-4LU" firstAttribute="top" secondItem="oQa-sC-ZwN" secondAttribute="bottom" constant="33" id="q67-t5-lKV"/>
+                <constraint firstAttribute="trailing" secondItem="fUG-oG-dXd" secondAttribute="trailing" id="yER-h5-AHD"/>
+                <constraint firstAttribute="bottom" secondItem="fUG-oG-dXd" secondAttribute="bottom" id="yKC-1e-A6h"/>
+            </constraints>
+            <point key="canvasLocation" x="34.5" y="54.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="tok_defaultsearchimage" width="520" height="245"/>
+    </resources>
+</document>

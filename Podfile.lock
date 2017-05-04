@@ -1,0 +1,33 @@
+PODS:
+  - IQKeyboardManager (4.0.5)
+  - Masonry (1.0.1)
+  - MBProgressHUD (1.0.0)
+  - MJExtension (3.0.13)
+  - SDAutoLayout (2.1.7)
+  - SDCycleScrollView (1.65):
+    - SDWebImage (~> 3.7)
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
+
+DEPENDENCIES:
+  - IQKeyboardManager (~> 4.0.5)
+  - Masonry (~> 1.0.1)
+  - MBProgressHUD (~> 1.0.0)
+  - MJExtension (~> 3.0.13)
+  - SDAutoLayout (~> 2.1.7)
+  - SDCycleScrollView (~> 1.65)
+  - SDWebImage (~> 3.8.2)
+
+SPEC CHECKSUMS:
+  IQKeyboardManager: 50b62c0603308968256f8208886e206c1dcce607
+  Masonry: a1a931a0d08870ed8ae415a2ea5ea68ebcac77df
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  MJExtension: 5932755f451458eefa24239358817f8d291240c7
+  SDAutoLayout: e9b36d04b8c0b504762a04d76fbbe5108944297a
+  SDCycleScrollView: f72904c77698a7f93a41bcbbc2d78b073bf7326c
+  SDWebImage: '098e97e6176540799c27e804c96653ee0833d13c'
+
+PODFILE CHECKSUM: 4ec7365e3c6bf15c1e387d62c4603bb720392b39
+
+COCOAPODS: 1.1.0.beta.2

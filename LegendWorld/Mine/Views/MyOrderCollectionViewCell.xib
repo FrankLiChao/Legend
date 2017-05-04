@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MyOrderCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="361" height="514"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="361" height="514"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noOrder" translatesAutoresizingMaskIntoConstraints="NO" id="lJC-Lm-SlM">
+                        <rect key="frame" x="125" y="172" width="110" height="110"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="110" id="Iks-VI-aGh"/>
+                            <constraint firstAttribute="height" constant="110" id="M4h-0Z-mHj"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="还没有订单哦" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jgU-tg-usq">
+                        <rect key="frame" x="134" y="302" width="92" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.27450980392156865" green="0.27450980392156865" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="uD3-5u-KeA">
+                        <rect key="frame" x="0.0" y="0.0" width="361" height="514"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    </tableView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="uD3-5u-KeA" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="9je-SD-ica"/>
+                <constraint firstItem="jgU-tg-usq" firstAttribute="centerX" secondItem="uD3-5u-KeA" secondAttribute="centerX" id="F4j-uq-eLS"/>
+                <constraint firstItem="uD3-5u-KeA" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="KD8-rs-naJ"/>
+                <constraint firstAttribute="trailing" secondItem="uD3-5u-KeA" secondAttribute="trailing" id="M3M-U0-hff"/>
+                <constraint firstAttribute="bottom" secondItem="uD3-5u-KeA" secondAttribute="bottom" id="bcf-qn-E6c"/>
+                <constraint firstItem="lJC-Lm-SlM" firstAttribute="centerY" secondItem="uD3-5u-KeA" secondAttribute="centerY" constant="-30" id="fFC-me-Mhc"/>
+                <constraint firstItem="lJC-Lm-SlM" firstAttribute="centerX" secondItem="uD3-5u-KeA" secondAttribute="centerX" id="fyC-9f-kSy"/>
+                <constraint firstItem="jgU-tg-usq" firstAttribute="top" secondItem="lJC-Lm-SlM" secondAttribute="bottom" constant="20" id="g5o-Z5-UUh"/>
+            </constraints>
+            <size key="customSize" width="361" height="514"/>
+            <connections>
+                <outlet property="emptyImg" destination="lJC-Lm-SlM" id="xb7-YG-i8C"/>
+                <outlet property="emptyLabel" destination="jgU-tg-usq" id="fpK-mE-VdO"/>
+                <outlet property="orderTableView" destination="uD3-5u-KeA" id="br3-mM-zgQ"/>
+            </connections>
+            <point key="canvasLocation" x="-500" y="23"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="noOrder" width="110" height="110"/>
+    </resources>
+</document>

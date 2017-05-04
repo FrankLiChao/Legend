@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="ApplyRecordTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="69"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tok_posdefault" translatesAutoresizingMaskIntoConstraints="NO" id="aWy-OX-vF7">
+                        <rect key="frame" x="15" y="15" width="40" height="39.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="39.5" id="PUR-8U-CFF"/>
+                            <constraint firstAttribute="width" constant="40" id="whn-AT-0Qe"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="申请0台" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qaV-8P-auu">
+                        <rect key="frame" x="65" y="15" width="55.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.27450980390000002" green="0.27450980390000002" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12-26 15:32" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="81L-Vn-ekx">
+                        <rect key="frame" x="65" y="38.5" width="73" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.60784313729999995" green="0.60784313729999995" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="审核中" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sY1-Q2-CmA">
+                        <rect key="frame" x="259" y="25.5" width="46" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.27450980390000002" green="0.27450980390000002" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="sY1-Q2-CmA" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" constant="-7" id="67R-fc-pfU"/>
+                    <constraint firstItem="81L-Vn-ekx" firstAttribute="leading" secondItem="aWy-OX-vF7" secondAttribute="trailing" constant="10" id="BIw-P3-4QW"/>
+                    <constraint firstItem="81L-Vn-ekx" firstAttribute="bottom" secondItem="aWy-OX-vF7" secondAttribute="bottom" id="Dea-od-aum"/>
+                    <constraint firstItem="aWy-OX-vF7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="7" id="MOl-Mc-hQH"/>
+                    <constraint firstItem="aWy-OX-vF7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="7" id="OW6-Gi-ZSN"/>
+                    <constraint firstItem="qaV-8P-auu" firstAttribute="leading" secondItem="aWy-OX-vF7" secondAttribute="trailing" constant="10" id="R7z-mz-9HX"/>
+                    <constraint firstItem="qaV-8P-auu" firstAttribute="top" secondItem="aWy-OX-vF7" secondAttribute="top" id="b6Q-Yw-alJ"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="aWy-OX-vF7" secondAttribute="bottom" constant="7" id="da7-6B-WN6"/>
+                    <constraint firstItem="sY1-Q2-CmA" firstAttribute="centerY" secondItem="aWy-OX-vF7" secondAttribute="centerY" id="hzC-ey-sBa"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="detailLab" destination="81L-Vn-ekx" id="lKO-VS-SV0"/>
+                <outlet property="logoIm" destination="aWy-OX-vF7" id="6Jy-cZ-3FG"/>
+                <outlet property="nameLab" destination="qaV-8P-auu" id="Vy9-jX-kAA"/>
+                <outlet property="statusLab" destination="sY1-Q2-CmA" id="rU6-PY-r0e"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="tok_posdefault" width="100" height="100"/>
+    </resources>
+</document>

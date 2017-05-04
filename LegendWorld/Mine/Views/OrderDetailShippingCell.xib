@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="107" id="KGk-i7-Jjw" customClass="OrderDetailShippingCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="107"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="107"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shipping_icon" translatesAutoresizingMaskIntoConstraints="NO" id="lMR-TP-gFA">
+                        <rect key="frame" x="15" y="41" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="AF0-SH-6lM"/>
+                            <constraint firstAttribute="width" constant="25" id="CYS-Zi-OPG"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="【成都市】成都天府新区揽投派送员：赵铁柱8493正在为您派件" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IbD-d4-3x9">
+                        <rect key="frame" x="48" y="10" width="244" height="60"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.27450980392156865" green="0.27450980392156865" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2016-11-12 16:30:43" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jr6-mp-TOI">
+                        <rect key="frame" x="48" y="78" width="264" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="tVo-Ii-y0d"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.27450980392156865" green="0.27450980392156865" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow_right" translatesAutoresizingMaskIntoConstraints="NO" id="a7w-Fy-rRY">
+                        <rect key="frame" x="303" y="47" width="9" height="13"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="9" id="iOK-tZ-L9x"/>
+                            <constraint firstAttribute="height" constant="13" id="kyx-bS-tcd"/>
+                        </constraints>
+                    </imageView>
+                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bkF-SD-pkP">
+                        <rect key="frame" x="0.0" y="106" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.87843137250000003" green="0.87843137250000003" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="sjo-OU-H4r"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="该订单未追踪到物流信息" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lP4-g9-74s">
+                        <rect key="frame" x="50" y="45" width="247" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.27450980392156865" green="0.27450980392156865" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="lP4-g9-74s" firstAttribute="centerY" secondItem="lMR-TP-gFA" secondAttribute="centerY" id="1Sa-yF-gx6"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Jr6-mp-TOI" secondAttribute="trailing" id="4qT-Rg-ZTW"/>
+                    <constraint firstItem="lMR-TP-gFA" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="5mB-82-E8h"/>
+                    <constraint firstItem="Jr6-mp-TOI" firstAttribute="top" secondItem="IbD-d4-3x9" secondAttribute="bottom" constant="8" id="FSH-0x-HWD"/>
+                    <constraint firstItem="Jr6-mp-TOI" firstAttribute="leading" secondItem="IbD-d4-3x9" secondAttribute="leading" id="GNa-ny-OPi"/>
+                    <constraint firstItem="lP4-g9-74s" firstAttribute="leading" secondItem="lMR-TP-gFA" secondAttribute="trailing" constant="10" id="HIL-EX-ZWw"/>
+                    <constraint firstAttribute="trailing" secondItem="bkF-SD-pkP" secondAttribute="trailing" id="I8f-ON-E8z"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Jr6-mp-TOI" secondAttribute="bottom" id="KyV-vL-tY3"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="a7w-Fy-rRY" secondAttribute="trailing" id="Mfq-VD-0uv"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="IbD-d4-3x9" secondAttribute="trailing" constant="20" id="ReW-1p-nfG"/>
+                    <constraint firstItem="bkF-SD-pkP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Vr6-L1-rfI"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="lP4-g9-74s" secondAttribute="trailing" constant="15" id="a3Z-4H-8Jw"/>
+                    <constraint firstItem="IbD-d4-3x9" firstAttribute="leading" secondItem="lMR-TP-gFA" secondAttribute="trailing" constant="8" id="aIP-jW-Caz"/>
+                    <constraint firstItem="a7w-Fy-rRY" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="cGW-gb-Ntn"/>
+                    <constraint firstItem="lMR-TP-gFA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="gqS-Xe-Rfn"/>
+                    <constraint firstAttribute="bottom" secondItem="bkF-SD-pkP" secondAttribute="bottom" id="mDP-gF-8E6"/>
+                    <constraint firstItem="IbD-d4-3x9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="wjo-pn-cCk"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="info" destination="lP4-g9-74s" id="DH6-QW-jSZ"/>
+                <outlet property="statusDesc" destination="IbD-d4-3x9" id="nlE-dc-oWH"/>
+                <outlet property="time" destination="Jr6-mp-TOI" id="Pgw-GJ-EJi"/>
+            </connections>
+            <point key="canvasLocation" x="20" y="32.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="arrow_right" width="9" height="13"/>
+        <image name="shipping_icon" width="22" height="17"/>
+    </resources>
+</document>

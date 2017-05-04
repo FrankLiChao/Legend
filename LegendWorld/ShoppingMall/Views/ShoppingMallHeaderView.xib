@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="ShoppingMallHeaderViewKey" id="qPm-ur-qXu" customClass="ShoppingMallHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="35"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="adk-MM-LGg">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="35"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="推荐" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fSV-fd-3jf">
+                            <rect key="frame" x="8" y="10" width="27" height="16"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                            <color key="textColor" red="0.27450980390000002" green="0.27450980390000002" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="75Z-CA-6Te"/>
+                        <constraint firstItem="fSV-fd-3jf" firstAttribute="top" secondItem="adk-MM-LGg" secondAttribute="top" constant="10" id="JPL-xE-ySG"/>
+                        <constraint firstItem="fSV-fd-3jf" firstAttribute="leading" secondItem="adk-MM-LGg" secondAttribute="leading" constant="8" id="utB-aJ-f4d"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="adk-MM-LGg" secondAttribute="bottom" id="N7i-Hp-q6f"/>
+                <constraint firstItem="adk-MM-LGg" firstAttribute="leading" secondItem="qPm-ur-qXu" secondAttribute="leading" id="Zl2-lO-4If"/>
+                <constraint firstAttribute="trailing" secondItem="adk-MM-LGg" secondAttribute="trailing" id="spq-Ol-PgY"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="titleLab" destination="fSV-fd-3jf" id="Yud-wt-5lU"/>
+            </connections>
+            <point key="canvasLocation" x="-15" y="-189"/>
+        </view>
+    </objects>
+</document>

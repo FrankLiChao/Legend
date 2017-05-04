@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="CertificationTableViewCell" selectionStyle="default" indentationWidth="10" rowHeight="73" id="KGk-i7-Jjw" customClass="CertificationTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="355" height="73"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="355" height="72"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="姓名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kw4-SW-cAl">
+                        <rect key="frame" x="15" y="0.0" width="80" height="73"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="soZ-XN-smx"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.27450980390000002" green="0.27450980390000002" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="3m5-CH-Igr">
+                        <rect key="frame" x="105" y="8" width="207" height="57"/>
+                        <color key="textColor" red="0.27450980390000002" green="0.27450980390000002" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zdY-jd-8DE">
+                        <rect key="frame" x="317" y="13.5" width="30" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="ISL-iM-vuU"/>
+                            <constraint firstAttribute="height" constant="45" id="v9Z-JJ-AL4"/>
+                        </constraints>
+                        <state key="normal" title="Button" image="mine_wenhao"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="3m5-CH-Igr" firstAttribute="leading" secondItem="Kw4-SW-cAl" secondAttribute="trailing" constant="10" id="Mzy-BT-2qF"/>
+                    <constraint firstItem="zdY-jd-8DE" firstAttribute="leading" secondItem="3m5-CH-Igr" secondAttribute="trailing" constant="5" id="NN1-rG-3kf"/>
+                    <constraint firstAttribute="bottom" secondItem="Kw4-SW-cAl" secondAttribute="bottom" id="OM1-1J-cwn"/>
+                    <constraint firstItem="zdY-jd-8DE" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="Shz-op-Xaq"/>
+                    <constraint firstItem="Kw4-SW-cAl" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="cAY-mm-HAC"/>
+                    <constraint firstItem="Kw4-SW-cAl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="oWv-5l-nh4"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="3m5-CH-Igr" secondAttribute="bottom" id="ugv-X5-bMA"/>
+                    <constraint firstItem="zdY-jd-8DE" firstAttribute="centerY" secondItem="Kw4-SW-cAl" secondAttribute="centerY" id="wfZ-yW-swH"/>
+                    <constraint firstItem="3m5-CH-Igr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="yPW-Zp-Smf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="inputTx" destination="3m5-CH-Igr" id="PbZ-vc-WXr"/>
+                <outlet property="nameLab" destination="Kw4-SW-cAl" id="f2u-eQ-dR2"/>
+                <outlet property="tipBtn" destination="zdY-jd-8DE" id="r8B-qM-Ljq"/>
+            </connections>
+            <point key="canvasLocation" x="-159.5" y="37.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="mine_wenhao" width="20" height="20"/>
+    </resources>
+</document>
